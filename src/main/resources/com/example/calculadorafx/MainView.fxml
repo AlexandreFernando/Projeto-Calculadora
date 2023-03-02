@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPanePrincipal" prefHeight="339.0" prefWidth="274.0" styleClass="mainAnchorpane" stylesheets="@../../../styles/MainStyles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainViewController">
+   <children>
+      <TextArea fx:id="textAreaPrincipal" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="70.0" prefWidth="244.0" styleClass="inputTextArea" wrapText="true" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor></TextArea>
+      <TextField fx:id="labelResposta" alignment="CENTER_RIGHT" editable="false" layoutX="15.0" layoutY="100.0" prefHeight="25.0" prefWidth="200.0" promptText="= Resultado =" styleClass="resultTextArea" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="100.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor></TextField>
+      <AnchorPane fx:id="anchorPaneButtons" layoutX="15.0" layoutY="135.0" prefHeight="187.0" prefWidth="270.0" styleClass="secondAnchorpane" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="135.0">
+         <children>
+            <Group layoutX="15.0" layoutY="39.0" styleClass="mainButtons" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0">
+               <children>
+                  <Group layoutY="136.0">
+                     <children>
+                        <Button fx:id="buttonDoubleZero" mnemonicParsing="false" onAction="#handleButtonDoubleZero" prefHeight="29.0" prefWidth="52.0" styleClass="secondButtons" text="00">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="buttonZero" layoutX="57.0" mnemonicParsing="false" onAction="#handleButtonZero" prefHeight="29.0" prefWidth="52.0" styleClass="primaryButtons" text="0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="buttonPonto" layoutX="114.0" mnemonicParsing="false" onAction="#handleButtonPonto" prefHeight="29.0" prefWidth="52.0" styleClass="secondButtons" text=".">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </Group>
+                  <Group layoutY="102.0" styleClass="primaryButtons">
+                     <children>
+                        <Button fx:id="buttonNumUm" mnemonicParsing="false" onAction="#handleButtonNumUm" prefHeight="29.0" prefWidth="52.0" text="1">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="buttonNumDois" layoutX="57.0" mnemonicParsing="false" onAction="#handleButtonNumDois" prefHeight="29.0" prefWidth="52.0" text="2">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="buttonNumTres" layoutX="114.0" mnemonicParsing="false" onAction="#handleButtonNumTres" prefHeight="29.0" prefWidth="52.0" text="3">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </Group>
+                  <Group layoutY="68.0" styleClass="primaryButtons">
+                     <children>
+                        <Button fx:id="buttonNumQuatro" mnemonicParsing="false" onAction="#handleButtonNumQuatro" prefHeight="29.0" prefWidth="52.0" text="4">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="buttonNumCinco" layoutX="57.0" mnemonicParsing="false" onAction="#handleButtonNumCinco" prefHeight="29.0" prefWidth="52.0" text="5">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="buttonNumSeis" layoutX="114.0" mnemonicParsing="false" onAction="#handleButtonNumSeis" prefHeight="29.0" prefWidth="52.0" text="6">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </Group>
+                  <Group layoutY="34.0" styleClass="primaryButtons">
+                     <children>
+                        <Button fx:id="buttonNumSete" mnemonicParsing="false" onAction="#handleButtonNumSete" prefHeight="29.0" prefWidth="52.0" text="7">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="buttonNumOito" layoutX="57.0" mnemonicParsing="false" onAction="#handleButtonNumOito" prefHeight="29.0" prefWidth="52.0" text="8">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="buttonNumNove" layoutX="114.0" mnemonicParsing="false" onAction="#handleButtonNumNove" prefHeight="29.0" prefWidth="52.0" text="9">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </Group>
+                  <Group styleClass="secondButtons">
+                     <children>
+                        <Button fx:id="buttonPorcentagem" mnemonicParsing="false" onAction="#handleButtonPorcentagem" prefHeight="29.0" prefWidth="52.0" styleClass="buttonOperacoes" text="\%">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="buttonLimpar" layoutX="57.0" mnemonicParsing="false" onAction="#handleButtonLimpar" prefHeight="29.0" prefWidth="52.0" styleClass="buttonLimpa" text="C">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="buttonApagar" layoutX="114.0" mnemonicParsing="false" onAction="#handleButtonApagar" prefHeight="29.0" prefWidth="52.0" styleClass="buttonLimpa" text="&lt;x">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </Group>
+               </children>
+            </Group>
+            <Group layoutX="203.0" layoutY="40.0" styleClass="mainButtons" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+               <children>
+                  <Button fx:id="buttonResultado" layoutY="136.0" mnemonicParsing="false" onAction="#handleButtonResultado" prefHeight="29.0" prefWidth="52.0" styleClass="secondButtons" text="=">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="buttonAdicionar" layoutY="102.0" mnemonicParsing="false" onAction="#handleButtonAdicionar" prefHeight="29.0" prefWidth="52.0" styleClass="secondButtons" text="+">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="buttonRemover" layoutY="68.0" mnemonicParsing="false" onAction="#handleButtonRemover" prefHeight="29.0" prefWidth="52.0" styleClass="secondButtons" text="-">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="buttonMultiplicar" layoutY="34.0" mnemonicParsing="false" onAction="#handleButtonMultiplicar" prefHeight="29.0" prefWidth="52.0" styleClass="secondButtons" text="*">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="buttonDividir" mnemonicParsing="false" onAction="#handleButtonDividir" prefHeight="29.0" prefWidth="52.0" styleClass="secondButtons" text="/">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
